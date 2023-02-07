@@ -12,6 +12,6 @@ Case test 01 - Acesso a página de compras
     [Tags]    atalhos
     Acessar home page do site Sao Paulo da Sorte
     Verificar se o título é "São Paulo Dá Sorte"
-    # Clicar no botão "Compre agora"
-    # Verificar se a header mostra "Compra de título"
+    Clicar no botão "Compre agora"
+    Verificar se a header mostra "Compra de título"
 

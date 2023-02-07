@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230207 18:05:57.647" rpa="false" schemaversion="3">
+<suite id="s1" name="Argumentos" source="C:\Users\Gabriel\Documents\Robot\VariaveisEscoposArgumentos\Argumentos.robot">
+<test id="s1-t1" name="Concatenando Strings" line="11">
+<kw name="Função de concatenação">
+<arg>${NOME}</arg>
+<arg>${SOBRENOME}</arg>
+<arg>${STRING}</arg>
+<arg>${PROVEDOR}</arg>
+<kw name="User Name" library="FakerLibrary">
+<var>${STRING}</var>
+<msg timestamp="20230207 18:05:58.578" level="INFO">${STRING} = ogreen</msg>
+<status status="PASS" starttime="20230207 18:05:58.578" endtime="20230207 18:05:58.578"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${EMAIL}</var>
+<arg>SEPARATOR=</arg>
+<arg>${NOME}</arg>
+<arg>${SOBRENOME}</arg>
+<arg>${STRING}</arg>
+<arg>${PROVEDOR}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230207 18:05:58.578" level="INFO">${EMAIL} = gabrieloliveiraogreen@email.com</msg>
+<status status="PASS" starttime="20230207 18:05:58.578" endtime="20230207 18:05:58.578"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${EMAIL}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230207 18:05:58.578" endtime="20230207 18:05:58.578"/>
+</kw>
+<status status="PASS" starttime="20230207 18:05:58.578" endtime="20230207 18:05:58.578"/>
+</kw>
+<status status="PASS" starttime="20230207 18:05:58.578" endtime="20230207 18:05:58.578"/>
+</test>
+<status status="PASS" starttime="20230207 18:05:57.647" endtime="20230207 18:05:58.593"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Argumentos">Argumentos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -2,28 +2,29 @@
 Documentation    Suíte de teste do site amazon.com.br
 ...
 Resource    amazon_resources.robot
-Test Setup    Abrir navegador
-Test Teardown    Fechar navegador
+Suite Setup    Abrir navegador
+Suite Teardown    Fechar navegador
 
 *** Test Cases ***
 Case test 01 - Acesso ao menu "Eletrônicos"
     [Documentation]    Teste verifica o menu de elêtronicos da Amazon.com.br e a categoria "Computadores e 
     ...                informática"
     [Tags]    menus
-    Acessar a home page do site Amazon.com.br
-    Entrar no menu "Eletrônicos"
-    Verificar se aparece a frase "Eletrônicos e Tecnologia"
-    Verificar se o título da página fica "Eletrônicos e Tecnologia | Amazon.com.br"
-    Verificar se aparece a categoria "Computadores e Informática"
+    Dado que estou na home page da Amazon.com.br
+    Quando acessar o menu "Eletrônicos"
+    Então o título da página deve ficar "Eletrônicos e Tecnologia | Amazon.com.br"
+    E o texto "Eletrônicos e Tecnologia" deve ser exibido na página
+    E a categoria "Computadores e Informática" deve ser exibida na página
+
 
 Case test 02 - Pesquisa de um Produto
     [Documentation]    Teste verifica a busca de um produto dentro do site Amazon.com.br
 
     [Tags]    busca_produto
-    Acessar a home page do site Amazon.com.br
-    Digitar o nome de produto "Xbox Series S" no campo de pesquisa
-    Clicar no botão de pesquisa
-    Exibir a tela com o resultado da pesquisa,listando o produto pesquisado.
+    Dado que estou na home page da Amazon.com.br
+    Quando pesquisar pelo produto "Xbox Series S"
+    Então o título da página deve ficar "Amazon.com.br : Xbox Series S"
+    E um produto da linha "Xbox Series S" deve ser mostrado na página
 
 Caso de Teste 03 - Adicionar Produto no Carrinho
     [Documentation]    Esse teste verifica a adição de um produto no carrinho de compras
