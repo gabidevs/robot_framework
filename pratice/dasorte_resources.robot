@@ -25,6 +25,7 @@ Verificar se o título é "${TITULO}"
     Wait Until Element Is Visible    locator=//button[@class='accept-button'][contains(.,'OK')]
     Click Element    locator=//button[@class='accept-button'][contains(.,'OK')]
     Wait Until Page Contains    text=${TITULO}
+    Title Should Be    São Paulo Dá Sorte
 
 Clicar no botão "Compre agora"
     Wait Until Element Is Visible    locator=//span[@class='material-icons-outlined'][contains(.,'arrow_forward')]
