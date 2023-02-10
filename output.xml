@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230210 09:58:15.411" rpa="false" schemaversion="3">
+<suite id="s1" name="Diffteste" source="c:\Users\atend\Documents\robot_framework\DiffTest\diffteste.robot">
+<test id="s1-t1" name="Comparando arquivos" line="5">
+<status status="FAIL" starttime="20230210 09:58:15.472" endtime="20230210 09:58:15.473">Test contains no keywords.</status>
+</test>
+<status status="FAIL" starttime="20230210 09:58:15.433" endtime="20230210 09:58:15.476"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Diffteste">Diffteste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
