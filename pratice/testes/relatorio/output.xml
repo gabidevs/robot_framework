@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230210 16:16:38.000" rpa="false" schemaversion="3">
+<suite id="s1" name="Dasorte Tests" source="C:\Users\atend\Documents\robot_framework\pratice\testes\dasorte_tests.robot">
+<test id="s1-t1" name="Case 01: Testar pagina inicial" line="10">
+<kw name="Dado que estou na home page do São Paulo da Sorte" library="dasorte_resources">
+<kw name="Abrir navegador" library="dasorte_resources">
+<arg>https://sp.dasorte.com/</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230210 16:16:38.319" level="INFO">Opening browser 'chrome' to base url 'https://sp.dasorte.com/'.</msg>
+<status status="PASS" starttime="20230210 16:16:38.319" endtime="20230210 16:16:41.762"/>
+</kw>
+<status status="PASS" starttime="20230210 16:16:38.318" endtime="20230210 16:16:41.762"/>
+</kw>
+<status status="PASS" starttime="20230210 16:16:38.318" endtime="20230210 16:16:41.762"/>
+</kw>
+<tag>atalhos</tag>
+<status status="PASS" starttime="20230210 16:16:38.317" endtime="20230210 16:16:41.763"/>
+</test>
+<test id="s1-t2" name="Testar campos da pagina de resultado" line="22">
+<tag>resultado</tag>
+<status status="FAIL" starttime="20230210 16:16:41.765" endtime="20230210 16:16:41.766">Test contains no keywords.</status>
+</test>
+<test id="s1-t3" name="Testar campos da pagina de Resgate Que Sorte" line="26">
+<tag>que_sorte</tag>
+<status status="FAIL" starttime="20230210 16:16:41.770" endtime="20230210 16:16:41.771">Test contains no keywords.</status>
+</test>
+<test id="s1-t4" name="Testar campos da pagina Seja um revendedor" line="29">
+<tag>revendedor</tag>
+<status status="FAIL" starttime="20230210 16:16:41.773" endtime="20230210 16:16:41.774">Test contains no keywords.</status>
+</test>
+<test id="s1-t5" name="Testar menu Sobre" line="32">
+<tag>menu_sobre</tag>
+<status status="FAIL" starttime="20230210 16:16:41.777" endtime="20230210 16:16:41.777">Test contains no keywords.</status>
+</test>
+<test id="s1-t6" name="Testar campos da pagina Ajuda" line="35">
+<tag>ajuda</tag>
+<status status="FAIL" starttime="20230210 16:16:41.779" endtime="20230210 16:16:41.780">Test contains no keywords.</status>
+</test>
+<test id="s1-t7" name="Testar campos da pagina Contato" line="38">
+<tag>contato</tag>
+<status status="FAIL" starttime="20230210 16:16:41.781" endtime="20230210 16:16:41.782">Test contains no keywords.</status>
+</test>
+<kw name="Fechar navegador" library="dasorte_resources" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230210 16:16:41.787" endtime="20230210 16:16:44.065"/>
+</kw>
+<status status="PASS" starttime="20230210 16:16:41.787" endtime="20230210 16:16:44.065"/>
+</kw>
+<doc>Suite de testes do site São Paulo dá Sorte</doc>
+<status status="FAIL" starttime="20230210 16:16:38.002" endtime="20230210 16:16:44.065"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">ajuda</stat>
+<stat pass="1" fail="0" skip="0">atalhos</stat>
+<stat pass="0" fail="1" skip="0">contato</stat>
+<stat pass="0" fail="1" skip="0">menu_sobre</stat>
+<stat pass="0" fail="1" skip="0">que_sorte</stat>
+<stat pass="0" fail="1" skip="0">resultado</stat>
+<stat pass="0" fail="1" skip="0">revendedor</stat>
+</tag>
+<suite>
+<stat pass="1" fail="6" skip="0" id="s1" name="Dasorte Tests">Dasorte Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
