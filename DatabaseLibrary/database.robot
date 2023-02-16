@@ -11,6 +11,13 @@ Library         DatabaseLibrary
 Test Setup      Conectar no Banco de Dados
 Test Teardown   Desconectar do Banco de Dados
 
+*** Variables ***
+${DBName}    guize
+${DBUser}    root
+${DBPass}    360gravez
+${DBHost}    127.0.0.1
+${DBPort}    3306
+
 *** Test Cases ***
 Exemplo 01: Executando scripts SQL via Arquivos
     Executar script via ARQUIVO no Banco de Dados       ${CURDIR}/my_sql_scripts/create_table_accounts.sql
@@ -39,7 +46,7 @@ Conectar no Banco de Dados
     ## SQLite 3
       # Connect To Database Using Custom Params   dbapiModuleName=sqlite3    db_connect_string=database="./${DBName}.db", isolation_level=None
     ## MySQL
-    #   Connect To Database   dbapiModuleName=pymysql   dbName=${DBName}   dbUsername=${DBUser}   dbPassword=${DBPass}   dbHost=${DBHost}   dbPort=${DBPort}
+    Connect To Database   dbapiModuleName=pymysql   dbName=${DBName}   dbUsername=${DBUser}   dbPassword=${DBPass}   dbHost=${DBHost}   dbPort=${DBPort}
     ## SQL Server
       # Connect To Database   dbapiModuleName=pymssql   dbName=${DBName}   dbUsername=${DBUser}   dbPassword=${DBPass}   dbHost=${DBHost}   dbPort=${DBPort}	  
     ## Oracle

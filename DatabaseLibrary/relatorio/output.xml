@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230216 10:42:00.946" rpa="false" schemaversion="3">
+<suite id="s1" name="Database" source="C:\Users\atend\Documents\robot_framework\DatabaseLibrary\database.robot">
+<test id="s1-t1" name="Exemplo 01: Executando scripts SQL via Arquivos" line="22">
+<kw name="Conectar no Banco de Dados" type="SETUP">
+<kw name="Connect To Database" library="DatabaseLibrary">
+<arg>dbapiModuleName=pymysql</arg>
+<arg>dbName=${DBName}</arg>
+<arg>dbUsername=${DBUser}</arg>
+<arg>dbPassword=${DBPass}</arg>
+<arg>dbHost=${DBHost}</arg>
+<arg>dbPort=${DBPort}</arg>
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
+<msg timestamp="20230216 10:42:00.995" level="INFO">Connecting using : pymysql.connect(db=guize, user=root, passwd=360gravez, host=127.0.0.1, port=3306, charset=None) </msg>
+<msg timestamp="20230216 10:42:01.000" level="FAIL">'cryptography' package is required for sha256_password or caching_sha2_password auth methods</msg>
+<status status="FAIL" starttime="20230216 10:42:00.980" endtime="20230216 10:42:01.001"/>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:00.979" endtime="20230216 10:42:01.002"/>
+</kw>
+<kw name="Desconectar do Banco de Dados" type="TEARDOWN">
+<kw name="Disconnect From Database" library="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<msg timestamp="20230216 10:42:01.002" level="INFO">Executing : Disconnect From Database</msg>
+<msg timestamp="20230216 10:42:01.003" level="FAIL">AttributeError: 'NoneType' object has no attribute 'close'</msg>
+<status status="FAIL" starttime="20230216 10:42:01.002" endtime="20230216 10:42:01.003"/>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:01.002" endtime="20230216 10:42:01.003">AttributeError: 'NoneType' object has no attribute 'close'</status>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:00.979" endtime="20230216 10:42:01.003">Setup failed:
+'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+
+Also teardown failed:
+AttributeError: 'NoneType' object has no attribute 'close'</status>
+</test>
+<test id="s1-t2" name="Exemplo 02: Executando scripts SQL via STRING" line="27">
+<kw name="Conectar no Banco de Dados" type="SETUP">
+<kw name="Connect To Database" library="DatabaseLibrary">
+<arg>dbapiModuleName=pymysql</arg>
+<arg>dbName=${DBName}</arg>
+<arg>dbUsername=${DBUser}</arg>
+<arg>dbPassword=${DBPass}</arg>
+<arg>dbHost=${DBHost}</arg>
+<arg>dbPort=${DBPort}</arg>
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
+<msg timestamp="20230216 10:42:01.005" level="INFO">Connecting using : pymysql.connect(db=guize, user=root, passwd=360gravez, host=127.0.0.1, port=3306, charset=None) </msg>
+<msg timestamp="20230216 10:42:01.030" level="FAIL">'cryptography' package is required for sha256_password or caching_sha2_password auth methods</msg>
+<status status="FAIL" starttime="20230216 10:42:01.005" endtime="20230216 10:42:01.031"/>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:01.005" endtime="20230216 10:42:01.031"/>
+</kw>
+<kw name="Desconectar do Banco de Dados" type="TEARDOWN">
+<kw name="Disconnect From Database" library="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<msg timestamp="20230216 10:42:01.033" level="INFO">Executing : Disconnect From Database</msg>
+<msg timestamp="20230216 10:42:01.033" level="FAIL">AttributeError: 'NoneType' object has no attribute 'close'</msg>
+<status status="FAIL" starttime="20230216 10:42:01.033" endtime="20230216 10:42:01.033"/>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:01.032" endtime="20230216 10:42:01.034">AttributeError: 'NoneType' object has no attribute 'close'</status>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:01.004" endtime="20230216 10:42:01.035">Setup failed:
+'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+
+Also teardown failed:
+AttributeError: 'NoneType' object has no attribute 'close'</status>
+</test>
+<test id="s1-t3" name="Exemplo 03: Select Statement" line="31">
+<kw name="Conectar no Banco de Dados" type="SETUP">
+<kw name="Connect To Database" library="DatabaseLibrary">
+<arg>dbapiModuleName=pymysql</arg>
+<arg>dbName=${DBName}</arg>
+<arg>dbUsername=${DBUser}</arg>
+<arg>dbPassword=${DBPass}</arg>
+<arg>dbHost=${DBHost}</arg>
+<arg>dbPort=${DBPort}</arg>
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
+<msg timestamp="20230216 10:42:01.038" level="INFO">Connecting using : pymysql.connect(db=guize, user=root, passwd=360gravez, host=127.0.0.1, port=3306, charset=None) </msg>
+<msg timestamp="20230216 10:42:01.039" level="FAIL">'cryptography' package is required for sha256_password or caching_sha2_password auth methods</msg>
+<status status="FAIL" starttime="20230216 10:42:01.037" endtime="20230216 10:42:01.040"/>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:01.037" endtime="20230216 10:42:01.040"/>
+</kw>
+<kw name="Desconectar do Banco de Dados" type="TEARDOWN">
+<kw name="Disconnect From Database" library="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<msg timestamp="20230216 10:42:01.041" level="INFO">Executing : Disconnect From Database</msg>
+<msg timestamp="20230216 10:42:01.041" level="FAIL">AttributeError: 'NoneType' object has no attribute 'close'</msg>
+<status status="FAIL" starttime="20230216 10:42:01.041" endtime="20230216 10:42:01.041"/>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:01.041" endtime="20230216 10:42:01.042">AttributeError: 'NoneType' object has no attribute 'close'</status>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:01.036" endtime="20230216 10:42:01.042">Setup failed:
+'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+
+Also teardown failed:
+AttributeError: 'NoneType' object has no attribute 'close'</status>
+</test>
+<test id="s1-t4" name="Exemplo 04: Limpando Tabelas" line="38">
+<kw name="Conectar no Banco de Dados" type="SETUP">
+<kw name="Connect To Database" library="DatabaseLibrary">
+<arg>dbapiModuleName=pymysql</arg>
+<arg>dbName=${DBName}</arg>
+<arg>dbUsername=${DBUser}</arg>
+<arg>dbPassword=${DBPass}</arg>
+<arg>dbHost=${DBHost}</arg>
+<arg>dbPort=${DBPort}</arg>
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
+<msg timestamp="20230216 10:42:01.043" level="INFO">Connecting using : pymysql.connect(db=guize, user=root, passwd=360gravez, host=127.0.0.1, port=3306, charset=None) </msg>
+<msg timestamp="20230216 10:42:01.059" level="FAIL">'cryptography' package is required for sha256_password or caching_sha2_password auth methods</msg>
+<status status="FAIL" starttime="20230216 10:42:01.043" endtime="20230216 10:42:01.060"/>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:01.043" endtime="20230216 10:42:01.060"/>
+</kw>
+<kw name="Desconectar do Banco de Dados" type="TEARDOWN">
+<kw name="Disconnect From Database" library="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<msg timestamp="20230216 10:42:01.061" level="INFO">Executing : Disconnect From Database</msg>
+<msg timestamp="20230216 10:42:01.062" level="FAIL">AttributeError: 'NoneType' object has no attribute 'close'</msg>
+<status status="FAIL" starttime="20230216 10:42:01.061" endtime="20230216 10:42:01.062"/>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:01.061" endtime="20230216 10:42:01.062">AttributeError: 'NoneType' object has no attribute 'close'</status>
+</kw>
+<status status="FAIL" starttime="20230216 10:42:01.042" endtime="20230216 10:42:01.062">Setup failed:
+'cryptography' package is required for sha256_password or caching_sha2_password auth methods
+
+Also teardown failed:
+AttributeError: 'NoneType' object has no attribute 'close'</status>
+</test>
+<doc>[14/10/2019] https://franz-see.github.io/Robotframework-Database-Library/api/1.2.2/DatabaseLibrary.html
+Instale: "pip install -U robotframework-databaselibrary"
+Para acessar o BD o Robot precisa conhecer o DRIVER de cada banco, então precisamos instalar esse DRIVER também (instale apenas para o BD que você utiliza!) ...
+Para PostgreSQL: "pip install psycopg2"
+Para SQLite 3: não precisa instalar nada!
+Para MySQL: "pip install pymysql"
+Para SQL Server: "pip install pymssql"
+Para Oracle: "pip install cx-Oracle"</doc>
+<status status="FAIL" starttime="20230216 10:42:00.947" endtime="20230216 10:42:01.064"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="Database">Database</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

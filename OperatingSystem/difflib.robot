@@ -11,3 +11,6 @@ TESTE DiffLibrary
 *** Keywords ***
 Comparando arquivos
     Diff Files    file1=./OperatingSystem/texto1.txt    file2=./OperatingSystem/texto2.txt    fail=False
+
+
+    
